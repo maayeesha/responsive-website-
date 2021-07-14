@@ -137,13 +137,14 @@ h2{
 .sponsors{
     width: 100%;
     height: 350px;
-    background-color: rgb(186, 186, 231);
+    background-color: rgb(240, 150, 240);
     padding: 0px;
 }
 .sponsors i{
     padding-left: 100px;
     padding-right: 100px;
     font-size: 100px;
+    color: blueviolet;
 }
 .sponsor-logos{
  padding-top: 80px;
