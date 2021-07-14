@@ -1,0 +1,278 @@
+/* Font Style
+========================================================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
+
+/* Common Styles
+=========================================================================== */
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Top Banner
+==========================================================================*/
+.container{
+    display:flex;
+    background-color: blueviolet;
+    width: 100%;
+    height: 550px;
+    justify-content: space-evenly;
+}
+
+h1{
+font-size: 64px;
+font-weight: 700;
+margin-bottom: 27px;
+color: honeydew;
+}
+
+.container img
+{
+width: 556.01px;
+height: 438px;
+}
+
+.banner-title
+{
+height: 230px;
+width: 485px;
+left: 156px;
+}
+
+.banner-button {
+    color: white;
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    padding: 18px;
+    text-decoration: none;
+    border: none;
+}
+.banner-button:hover
+{
+    padding: 30px;
+}
+
+.fas, .fa-arrow-right
+{
+    margin-left: 8px;
+}
+
+/* Football players 
+======================================================*/
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 10%;
+    grid-column-gap: 30px;
+    grid-row-gap: 27px;
+    justify-content: center;
+}
+
+.player{
+    width: 300px;
+    height: 474px;
+    background-color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.25);
+}
+.player img{
+    width: 300px;
+    height: 256px;
+}
+.player p{
+    color: grey;
+}
+.player-detail{
+    width: 285px;
+    height: 104px;
+}
+
+
+/* Photo Gallery 
+===============================================================*/
+
+.photos-copa{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 200px;
+}
+h2{
+    font-size: 2em;
+    text-align: center;
+    color: black;
+}
+.photo{
+    width: 300px;
+    height: 200px;
+    border: 2px solid violet;
+    border-radius: 10px;
+    margin: auto;
+    margin-bottom: 13px;
+}
+
+.photos-copa img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.photos-copa img:hover{
+    transform: scale(2.0);
+    transition: transform 1s ease-in-out;
+    overflow: hidden;
+}
+
+/* Sponsors 
+==============================================================*/
+.sponsors{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(186, 186, 231);
+    padding: 0px;
+}
+.sponsors i{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size: 100px;
+}
+.sponsor-logos{
+ padding-top: 80px;
+}
+/* Footer 
+==============================================================*/
+
+footer
+{
+    width: 483px;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+footer i
+{
+    padding: 16px;
+    color: grey;
+    font-size: 32px;
+}
+
+.football-logo
+{
+    color: #10437A;
+    display: flex;
+    align-items: center;
+    font-family: 'Niconne', cursive;
+    font-size: 73px;
+    height: 100px;
+}
+
+.fa-firefox
+{
+    color: #10437A;
+    font-size: 110px;
+    margin-right: 30px;
+}
+
+/* Media Query
+===================================================== */
+
+
+/* for Smart Phones */
+
+
+ @media only screen and (max-width: 767px) {
+
+
+    .container{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .players{
+        grid-template-columns: repeat(1,1fr);
+        margin:0%;
+        padding:0%;
+    }
+    .photos-copa
+    {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin: 0px;
+        padding: 0px;
+    }
+    .sponsors{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    .sponsors i{
+        padding-bottom: 30px; 
+        
+    }
+     .photos-copa{
+         margin: 0px;
+     }
+    footer{
+        width: 271px;
+        height: 63px;
+    } 
+}
+
+/* for Tablets */
+
+@media only screen and (max-width: 1024px) {
+
+
+    .container{
+        flex-direction: row;
+        width: 100%;
+        height: 100%;
+        justify-content: space-around;
+    }
+    
+    .players{
+        grid-template-columns: repeat(2,1fr);
+        margin:0%;
+        padding:0%;
+    }
+    .photos-copa
+    {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        align-items: center;
+        margin: 0px;
+    }
+    .sponsors{
+        width: 100%;
+        height: 400px;
+        display: grid;
+        justify-content: center;
+    }
+    .sponsors i{
+        padding: 25px;
+    }
+
+    footer{
+        width: 271px;
+        height: 63px;
+    } 
+} 
+
+
